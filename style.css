@@ -1,0 +1,424 @@
+/* ============================================================
+   Patricia Moreno Atelier — sistema de diseño v2
+   Fondo blanco. Coral, lila y mostaza como acentos. Fraunces
+   para títulos, Archivo para el cuerpo. La línea de guiones
+   verticales sigue siendo la firma visual, referencia a la trama.
+   ============================================================ */
+
+:root {
+  --coral: #c96b52;
+  --coral-deep: #a8523c;
+  --lilac: #a99bc0;
+  --panel: #f7f5f1;
+  --panel-deep: #ece7de;
+  --ink: #1a1712;
+  --mustard: #c2a23c;
+  --white: #ffffff;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Archivo", "Helvetica Neue", Arial, sans-serif;
+
+  --max-width: 1100px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; }
+img { max-width: 100%; display: block; }
+
+.wrap { max-width: var(--max-width); margin: 0 auto; padding: 0 28px; }
+
+/* ---------- Nav ---------- */
+header.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(26, 23, 18, 0.1);
+}
+
+.site-nav .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  gap: 20px;
+}
+
+.site-nav .logo {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.site-nav nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.site-nav nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav nav a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 3px;
+  transition: border-color 0.2s ease;
+}
+
+.site-nav nav a:hover { border-color: var(--coral); }
+
+.lang-switch {
+  display: flex;
+  gap: 6px;
+  border: 1px solid rgba(26,23,18,0.25);
+  padding: 3px;
+}
+
+.lang-switch button {
+  border: none;
+  background: transparent;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  padding: 5px 9px;
+  cursor: pointer;
+  color: rgba(26,23,18,0.55);
+}
+
+.lang-switch button.active {
+  background: var(--ink);
+  color: var(--white);
+}
+
+/* ---------- Hero ---------- */
+.hero { padding: 96px 0 72px; }
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  line-height: 1.05;
+  margin: 0 0 24px;
+  max-width: 16ch;
+}
+
+.hero .accent { color: var(--coral); }
+
+.hero .lede {
+  max-width: 46ch;
+  font-size: 1.15rem;
+  color: rgba(26,23,18,0.72);
+}
+
+.weave-divider {
+  height: 34px;
+  margin: 8px 0 0;
+  background-image: repeating-linear-gradient(
+    100deg, var(--ink) 0px, var(--ink) 2px, transparent 2px, transparent 14px
+  );
+  opacity: 0.5;
+  mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
+}
+
+section.divider-top { border-top: 1px solid rgba(26,23,18,0.12); }
+
+/* ---------- Bio / Statement ---------- */
+.about { padding: 64px 0; }
+
+.about-single { max-width: 70ch; }
+
+.about h2, .commissions h2, .cv h2, .work h2 {
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.eyebrow {
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--coral-deep);
+  margin-bottom: 10px;
+}
+
+.about p { margin: 0 0 16px; }
+
+.commission-photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+  margin-top: 32px;
+  max-width: 480px;
+}
+
+.commission-photo-tile {
+  aspect-ratio: 4/5;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.commission-photo-tile img { width: 100%; height: 100%; object-fit: cover; }
+
+.commission-photo-tile .ph-text {
+  color: rgba(26,23,18,0.35);
+  font-size: 0.72rem;
+  text-align: center;
+  padding: 10px;
+}
+
+/* ---------- Work / Series ---------- */
+.work { padding: 72px 0; }
+
+.series-block { margin-bottom: 64px; }
+
+.series-block h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  margin: 0 0 6px;
+}
+
+.series-block .series-note {
+  color: rgba(26,23,18,0.6);
+  margin: 0 0 28px;
+  max-width: 60ch;
+}
+
+.piece-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 28px;
+}
+
+.piece-card {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+}
+
+.piece-media {
+  aspect-ratio: 4 / 5;
+  background: var(--panel);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: opacity 0.2s ease;
+}
+
+.piece-card:hover .piece-media { opacity: 0.85; }
+
+.piece-media img { width: 100%; height: 100%; object-fit: cover; }
+
+.piece-media .ph-text {
+  color: rgba(26,23,18,0.4);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-align: center;
+  padding: 20px;
+}
+
+.piece-info { padding: 14px 2px 0; }
+
+.piece-info h4 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  margin: 0 0 4px;
+  font-weight: 600;
+}
+
+.piece-info .meta {
+  font-size: 0.85rem;
+  color: rgba(26,23,18,0.55);
+  margin: 0;
+}
+
+/* ---------- Modal ---------- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 23, 18, 0.72);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 100;
+}
+
+.modal-overlay.open { display: flex; }
+
+.modal-box {
+  background: var(--white);
+  max-width: 920px;
+  width: 100%;
+  max-height: 88vh;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+}
+
+@media (max-width: 760px) {
+  .modal-box { grid-template-columns: 1fr; }
+}
+
+.modal-gallery {
+  background: var(--panel);
+}
+
+.modal-gallery .modal-main-img {
+  aspect-ratio: 4/5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.modal-gallery .modal-main-img img { width: 100%; height: 100%; object-fit: cover; }
+
+.modal-thumbs {
+  display: flex;
+  gap: 6px;
+  padding: 8px;
+  flex-wrap: wrap;
+}
+
+.modal-thumbs img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.6;
+  border: 1px solid transparent;
+}
+
+.modal-thumbs img.active { opacity: 1; border-color: var(--ink); }
+
+.modal-details { padding: 32px; position: relative; }
+
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: rgba(26,23,18,0.5);
+  line-height: 1;
+}
+
+.modal-details h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  margin: 0 0 6px;
+}
+
+.modal-details .meta {
+  font-size: 0.85rem;
+  color: rgba(26,23,18,0.55);
+  margin: 0 0 20px;
+}
+
+.modal-details .story { margin: 0 0 20px; }
+
+.modal-details dl { margin: 0; font-size: 0.88rem; }
+.modal-details dt { color: rgba(26,23,18,0.5); margin-top: 10px; }
+.modal-details dd { margin: 2px 0 0; }
+
+/* ---------- Commissions ---------- */
+.commissions { padding: 72px 0; background: var(--panel); }
+
+.commissions .grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; }
+
+@media (max-width: 760px) { .commissions .grid { grid-template-columns: 1fr; } }
+
+.process-list { list-style: none; margin: 0; padding: 0; counter-reset: step; }
+
+.process-list li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 44px;
+  margin-bottom: 22px;
+}
+
+.process-list li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0; top: 0;
+  width: 28px; height: 28px;
+  border: 1px solid var(--ink);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  background: var(--white);
+}
+
+.process-list h5 { margin: 0 0 4px; font-family: var(--font-display); font-size: 1.02rem; }
+.process-list p { margin: 0; color: rgba(26,23,18,0.7); font-size: 0.94rem; }
+
+.price-box { border: 1px solid var(--ink); padding: 24px 26px; margin-top: 12px; background: var(--white); }
+.price-box .from { font-family: var(--font-display); font-size: 1.8rem; }
+.price-box p { font-size: 0.9rem; color: rgba(26,23,18,0.65); margin: 8px 0 0; }
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 13px 26px;
+  background: var(--ink);
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.cta-button:hover { background: var(--coral-deep); }
+
+/* ---------- CV ---------- */
+.cv { padding: 72px 0; }
+.cv .cv-body { max-width: 70ch; }
+.cv-pending { border-left: 3px solid var(--mustard); padding-left: 18px; color: rgba(26,23,18,0.7); }
+
+/* ---------- Footer ---------- */
+footer.site-footer { padding: 56px 0 40px; border-top: 1px solid rgba(26,23,18,0.12); }
+
+footer .wrap { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 24px; }
+
+footer h2 { font-family: var(--font-display); font-size: 1.6rem; margin: 0 0 8px; }
+
+footer a.email { font-size: 1.05rem; text-decoration: underline; text-decoration-color: var(--coral); }
+
+footer .socials { display: flex; gap: 16px; font-size: 0.85rem; }
+
+footer .copy { font-size: 0.78rem; color: rgba(26,23,18,0.45); margin-top: 28px; }
