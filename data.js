@@ -190,7 +190,7 @@ const PIECES = [
     title: "Brutalist Shibori",
     dimensions: "1,5m × 50cm",
     materials: "Lin, coton, acrylique et pastels",
-    images: ["assets/img/shibori/brutalist-shibori-01.jpg"],
+    images: ["assets/img/shibori/brutalist-shibori-01.jpg", "assets/img/shibori/brutalist-shibori-02.jpg", "assets/img/shibori/brutalist-shibori-03.jpg"],
     story: {
       fr: "Pièce de la série Shibori, structures tridimensionnelles obtenues par pliage et fils de chaîne supplémentaires.",
       en: "A piece from the Shibori series, three dimensional structures obtained through folding and additional warp threads.",
@@ -216,7 +216,7 @@ const PIECES = [
     title: "Entre planes",
     dimensions: "1m × 50cm",
     materials: "Double nappe, coton et laine",
-    images: ["assets/img/multiple-nappe/entre-planes-01.jpg"],
+    images: ["assets/img/multiple-nappe/entre-planes-01.jpg", "assets/img/multiple-nappe/entre-planes-02.jpg", "assets/img/multiple-nappe/entre-planes-03.jpg"],
     story: {
       fr: "Deux structures de tissage distinctes mais parallèles, l'une plus ordonnée, l'autre plus spontanée.",
       en: "Two distinct but parallel weave structures, one more ordered, the other more spontaneous.",
