@@ -211,6 +211,19 @@ const PIECES = [
     }
   },
   {
+    id: "paciencia",
+    series: "shibori",
+    title: "Paciencia",
+    dimensions: "1,2m × 50cm",
+    materials: "Acrylique, laine, polyester, cuir, fil de métal",
+    images: ["assets/img/shibori/paciencia-01.jpg", "assets/img/shibori/paciencia-02.jpg", "assets/img/shibori/paciencia-03.jpg"],
+    story: {
+      fr: "Pièce de la série Shibori, réalisée avec du fil de métal.",
+      en: "A piece from the Shibori series, made with metal wire.",
+      es: "Pieza de la serie Shibori, realizada con alambre metálico."
+    }
+  },
+  {
     id: "entre-planes",
     series: "multiple-nappe",
     title: "Entre planes",
