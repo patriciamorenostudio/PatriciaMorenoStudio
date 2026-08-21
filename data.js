@@ -320,7 +320,7 @@ const PIECES = [
     title: "Woven Foam Jacket",
     dimensions: "40cm × 100cm",
     materials: "Métier 8 cadres, polyester, mousse et fil de fer",
-    images: ["assets/img/collaboration/woven-foam-jacket-01.jpg"],
+    images: ["assets/img/collaboration/woven-foam-jacket-01.jpg", "assets/img/collaboration/woven-foam-jacket-02.jpg", "assets/img/collaboration/woven-foam-jacket-03.jpg", "assets/img/collaboration/woven-foam-jacket-04.jpg"],
     story: {
       fr: "Collaboration avec l'artiste R Moreno pour le magazine Répertoire, tissage de matériaux synthétiques et recyclés.",
       en: "A collaboration with artist R Moreno for Répertoire magazine, weaving synthetic and recycled materials.",
