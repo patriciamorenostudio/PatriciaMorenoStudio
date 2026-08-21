@@ -255,7 +255,7 @@ const PIECES = [
     title: "Figura flotante en lana",
     dimensions: "1,8m × 45cm",
     materials: "Tissage waffle, laine, acrylique et papier",
-    images: ["assets/img/techniques-multiples/figura-flotante-en-lana-01.jpg"],
+    images: ["assets/img/techniques-multiples/figura-flotante-en-lana-01.jpg", "assets/img/techniques-multiples/figura-flotante-en-lana-02.jpg", "assets/img/techniques-multiples/figura-flotante-en-lana-03.jpg"],
     story: {
       fr: "La structure en gaufre, réinventée comme forme sculpturale, loin de sa fonction absorbante d'origine.",
       en: "The waffle structure, reinvented as a sculptural form, far from its original absorbent function.",
