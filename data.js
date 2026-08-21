@@ -242,7 +242,7 @@ const PIECES = [
     title: "Lana reciclada con algodón",
     dimensions: "1m × 40cm",
     materials: "Coton rembourré, laine recyclée",
-    images: ["assets/img/multiple-nappe/lana-reciclada-con-algodon-01.jpg", "assets/img/multiple-nappe/lana-reciclada-con-algodon-02.jpg"],
+    images: ["assets/img/multiple-nappe/lana-reciclada-con-algodon-01.jpg", "assets/img/multiple-nappe/lana-reciclada-con-algodon-02.jpg", "assets/img/multiple-nappe/lana-reciclada-con-algodon-03.jpg"],
     story: {
       fr: "Objet volumétrique à double face, laine vierge filée à la main issue d'une couverture démontée.",
       en: "A double sided volumetric object, hand spun virgin wool from a dismantled blanket.",
