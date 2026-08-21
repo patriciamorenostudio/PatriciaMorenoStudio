@@ -229,7 +229,7 @@ const PIECES = [
     title: "Cadena montañosa",
     dimensions: "50cm × 1,5m",
     materials: "Tissage multicouche, polyester et fil de cuivre",
-    images: ["assets/img/multiple-nappe/cadena-montanosa-01.jpg", "assets/img/multiple-nappe/cadena-montanosa-02.jpg"],
+    images: ["assets/img/multiple-nappe/cadena-montanosa-01.jpg", "assets/img/multiple-nappe/cadena-montanosa-02.jpg", "assets/img/multiple-nappe/cadena-montanosa-03.jpg", "assets/img/multiple-nappe/cadena-montanosa-04.jpg", "assets/img/multiple-nappe/cadena-montanosa-05.jpg"],
     story: {
       fr: "Quatre nappes qui s'entrelacent selon un mouvement sinusoïdal, évoquant des chaînes montagneuses.",
       en: "Four layers that interlace in a sinusoidal movement, evoking mountain ranges.",
