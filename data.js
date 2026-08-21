@@ -320,11 +320,24 @@ const PIECES = [
     title: "Woven Foam Jacket",
     dimensions: "40cm × 100cm",
     materials: "Métier 8 cadres, polyester, mousse et fil de fer",
-    images: ["assets/img/collaboration/woven-foam-jacket-01.jpg", "assets/img/collaboration/woven-foam-jacket-02.jpg", "assets/img/collaboration/woven-foam-jacket-03.jpg", "assets/img/collaboration/woven-foam-jacket-04.jpg", "assets/img/collaboration/woven-foam-jacket-05.jpg", "assets/img/collaboration/woven-foam-jacket-06.jpg"],
+    images: ["assets/img/collaboration/woven-foam-jacket-01.jpg", "assets/img/collaboration/woven-foam-jacket-02.jpg", "assets/img/collaboration/woven-foam-jacket-03.jpg", "assets/img/collaboration/woven-foam-jacket-04.jpg"],
     story: {
       fr: "Collaboration avec l'artiste R Moreno pour le magazine Répertoire, tissage de matériaux synthétiques et recyclés.",
       en: "A collaboration with artist R Moreno for Répertoire magazine, weaving synthetic and recycled materials.",
       es: "Colaboración con la artista R Moreno para la revista Répertoire, tejido de materiales sintéticos y reciclados."
+    }
+  },
+  {
+    id: "vitrine-repertoire",
+    series: "collaboration",
+    title: "Vitrine Répertoire",
+    dimensions: "40cm × 100cm",
+    materials: "Métier 8 cadres, polyester, mousse et fil de fer",
+    images: ["assets/img/collaboration/woven-foam-jacket-05.jpg", "assets/img/collaboration/woven-foam-jacket-06.jpg"],
+    story: {
+      fr: "La pièce Woven Foam Jacket présentée en vitrine, dans le cadre de la collaboration avec R Moreno pour le magazine Répertoire.",
+      en: "The Woven Foam Jacket piece on display, part of the collaboration with R Moreno for Répertoire magazine.",
+      es: "La pieza Woven Foam Jacket presentada en vitrina, dentro de la colaboración con R Moreno para la revista Répertoire."
     }
   }
 ];
