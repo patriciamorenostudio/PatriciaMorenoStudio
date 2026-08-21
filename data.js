@@ -203,7 +203,7 @@ const PIECES = [
     title: "Mazorca Shibori",
     dimensions: "1,2m × 50cm",
     materials: "Coton, polyester",
-    images: ["assets/img/shibori/mazorca-shibori-01.jpg"],
+    images: ["assets/img/shibori/mazorca-shibori-01.jpg", "assets/img/shibori/mazorca-shibori-02.jpg", "assets/img/shibori/mazorca-shibori-03.jpg", "assets/img/shibori/mazorca-shibori-04.jpg"],
     story: {
       fr: "Référence à la mazorca, l'épi de maïs. Volume tissé en shibori.",
       en: "A reference to the mazorca, the corn cob. Volume woven in shibori.",
