@@ -268,7 +268,7 @@ const PIECES = [
     title: "Afectaciones Yorubas",
     dimensions: "130cm × 15cm",
     materials: "Coton, métier à tisser yoruba",
-    images: ["assets/img/techniques-multiples/afectaciones-yorubas-01.jpg"],
+    images: ["assets/img/techniques-multiples/afectaciones-yorubas-01.jpg", "assets/img/techniques-multiples/afectaciones-yorubas-02.jpg", "assets/img/techniques-multiples/afectaciones-yorubas-03.jpg"],
     story: {
       fr: "Une toile de base perturbée par des volumes de fils, en dialogue avec l'influence yoruba dans la musique caribéenne.",
       en: "A base cloth disrupted by volumes of thread, in dialogue with Yoruba influence in Caribbean music.",
