@@ -281,7 +281,7 @@ const PIECES = [
     title: "Cortina de cintura",
     dimensions: "2,80m × 14cm",
     materials: "Métier à ceinture, coton, laine et papier",
-    images: ["assets/img/techniques-multiples/cortina-de-cintura-01.jpg"],
+    images: ["assets/img/techniques-multiples/cortina-de-cintura-01.jpg", "assets/img/techniques-multiples/cortina-de-cintura-02.jpg", "assets/img/techniques-multiples/cortina-de-cintura-03.jpg"],
     story: {
       fr: "La technique du Chumbe andin, déplacée vers une exploration sculpturale du volume.",
       en: "The technique of the Andean Chumbe, shifted toward a sculptural exploration of volume.",
