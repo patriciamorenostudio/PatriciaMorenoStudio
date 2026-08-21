@@ -224,6 +224,19 @@ const PIECES = [
     }
   },
   {
+    id: "m-en-p",
+    series: "shibori",
+    title: "M en P",
+    dimensions: "2,7m × 50cm",
+    materials: "Coton, lin, laine, cuir",
+    images: ["assets/img/shibori/m-en-p-01.jpg", "assets/img/shibori/m-en-p-02.jpg", "assets/img/shibori/m-en-p-03.jpg", "assets/img/shibori/m-en-p-04.jpg"],
+    story: {
+      fr: "Pièce de la série Shibori, avec du cuir et une structure translucide.",
+      en: "A piece from the Shibori series, with leather and a translucent structure.",
+      es: "Pieza de la serie Shibori, con cuero y una estructura translúcida."
+    }
+  },
+  {
     id: "entre-planes",
     series: "multiple-nappe",
     title: "Entre planes",
