@@ -23,4 +23,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://VOTRE-DOMAINE.com/sitemap.xml
+Sitemap: https://patriciamoreno.studio/sitemap.xml
