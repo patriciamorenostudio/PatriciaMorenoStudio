@@ -54,9 +54,9 @@
       <ul>
         <li><a href="#a-propos" data-i18n="nav_about">À propos</a></li>
         <li><a href="#oeuvre" data-i18n="nav_work">Œuvre</a></li>
-        <li><a href="#commissions" data-i18n="nav_commissions">Commissions</a></li>
         <li><a href="#cv" data-i18n="nav_cv">CV</a></li>
         <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        <li><a href="#commissions" class="nav-cta" data-i18n="nav_commissions">Commissions</a></li>
       </ul>
       <div class="lang-switch">
         <button data-lang="fr" class="active">FR</button>
@@ -68,9 +68,26 @@
 </header>
 
 <section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <h1><span data-i18n="hero_h1_1">Je tisse des</span> <span class="accent" data-i18n="hero_h1_2">sculptures</span><span data-i18n="hero_h1_3">, pas des objets utiles.</span></h1>
+      <p class="lede" data-i18n="hero_lede">Artiste tisserande basée à Paris.</p>
+    </div>
+    <div class="hero-media">
+      <img src="assets/img/commissions/commission-mockup-05.jpg" alt="Pièce de Patricia Moreno installée dans un intérieur" onerror="phFallback(this)">
+      <div class="ph-text" style="display:none;" data-i18n="photo_soon"></div>
+    </div>
+  </div>
+</section>
+
+<section class="insitu divider-top">
   <div class="wrap">
-    <h1><span data-i18n="hero_h1_1">Je tisse des</span> <span class="accent" data-i18n="hero_h1_2">sculptures</span><span data-i18n="hero_h1_3">, pas des objets utiles.</span></h1>
-    <p class="lede" data-i18n="hero_lede">Artiste tisserande basée à Paris.</p>
+    <span class="eyebrow" data-i18n="eyebrow_insitu">En situation</span>
+    <div class="insitu-strip">
+      <div class="insitu-tile"><img src="assets/img/commissions/commission-mockup-01.jpg" alt="Pièce en situation, intérieur en béton" onerror="phFallback(this)"><div class="ph-text" style="display:none;" data-i18n="photo_soon"></div></div>
+      <div class="insitu-tile"><img src="assets/img/commissions/commission-mockup-03.jpg" alt="Pièce en situation, salon" onerror="phFallback(this)"><div class="ph-text" style="display:none;" data-i18n="photo_soon"></div></div>
+      <div class="insitu-tile"><img src="assets/img/commissions/commission-mockup-04.jpg" alt="Pièce en situation, salle à manger bois" onerror="phFallback(this)"><div class="ph-text" style="display:none;" data-i18n="photo_soon"></div></div>
+    </div>
   </div>
 </section>
 
@@ -94,6 +111,7 @@
   <div class="wrap">
     <span class="eyebrow" data-i18n="eyebrow_work">Œuvre</span>
     <h2 data-i18n="work_h2">Séries</h2>
+    <div class="series-nav" id="series-nav"></div>
     <div id="series-container"></div>
   </div>
 </section>
@@ -117,6 +135,12 @@
         <div class="commission-photos" id="commission-photos"></div>
       </div>
     </div>
+
+    <div class="mockups-block">
+      <h3 data-i18n="mockups_h3"></h3>
+      <p class="mockups-note" data-i18n="mockups_note"></p>
+      <div class="mockups-strip" id="mockups-strip"></div>
+    </div>
   </div>
 </section>
 
@@ -124,6 +148,7 @@
   <div class="wrap cv-body">
     <span class="eyebrow" data-i18n="eyebrow_cv">CV</span>
     <h2 data-i18n="cv_h2"></h2>
+    <p class="cv-summary" data-i18n="cv_summary"></p>
     <a class="cta-button" id="cv-download-link" href="assets/cv/cv-patricia-moreno.pdf" target="_blank" rel="noopener" data-i18n="cv_download"></a>
   </div>
 </section>
@@ -164,6 +189,11 @@
       </dl>
     </div>
   </div>
+</div>
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <button class="lightbox-close" id="lightbox-close">&times;</button>
+  <img id="lightbox-img" src="" alt="">
 </div>
 
 <script src="data.js"></script>
