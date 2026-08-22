@@ -23,6 +23,9 @@ const I18N = {
     statement_p3: "À travers des structures, des couches, des tensions et des volumes, j'explore comment savoir technique et savoir culturel coexistent dans le tissage.",
     eyebrow_work: "Œuvre",
     work_h2: "Séries",
+    eyebrow_insitu: "En situation",
+    mockups_h3: "Idées d'installation",
+    mockups_note: "Quelques simulations pour imaginer une pièce chez vous, dans un hôtel ou un bureau.",
     eyebrow_commissions: "Commissions",
     commissions_h2: "Pièces murales et collaborations",
     commissions_p: "Je réalise des pièces murales sur mesure pour des particuliers, hôtels, cabinets d'architecture, designers d'intérieur, curateurs et marques. Chaque commission part d'un dialogue sur le lieu, l'espace et l'intention avant toute proposition technique.",
@@ -38,6 +41,7 @@ const I18N = {
     cta_commission: "Discuter d'un projet",
     eyebrow_cv: "CV",
     cv_h2: "Parcours",
+    cv_summary: "Formation en ingénierie et en artisanat textile, entre la Colombie et la France. Le CV complet détaille formation, expositions et collaborations.",
     cv_download: "Télécharger le CV (PDF)",
     footer_h2: "Discutons",
     footer_copy: "© Patricia Moreno. Tissage et sculpture textile, Paris.",
@@ -76,6 +80,9 @@ const I18N = {
     statement_p3: "Through structures, layers, tensions and volumes, I explore how technical knowledge and cultural knowledge coexist in the weave.",
     eyebrow_work: "Work",
     work_h2: "Series",
+    eyebrow_insitu: "In context",
+    mockups_h3: "Installation ideas",
+    mockups_note: "A few simulations to picture a piece in your home, a hotel, or an office.",
     eyebrow_commissions: "Commissions",
     commissions_h2: "Wall pieces and collaborations",
     commissions_p: "I create made to measure wall pieces for private clients, hotels, architecture firms, interior designers, curators and brands. Every commission starts with a conversation about the space and the intention behind it, before any technical proposal.",
@@ -91,6 +98,7 @@ const I18N = {
     cta_commission: "Discuss a project",
     eyebrow_cv: "CV",
     cv_h2: "Background",
+    cv_summary: "Trained as an engineer and as a textile artisan, between Colombia and France. The full CV covers education, exhibitions and collaborations.",
     cv_download: "Download CV (PDF)",
     footer_h2: "Let's talk",
     footer_copy: "© Patricia Moreno. Weaving and textile sculpture, Paris.",
@@ -129,6 +137,9 @@ const I18N = {
     statement_p3: "A través de estructuras, capas, tensiones y volúmenes, exploro cómo el saber técnico y el saber cultural coexisten en el tejido.",
     eyebrow_work: "Obra",
     work_h2: "Series",
+    eyebrow_insitu: "En contexto",
+    mockups_h3: "Ideas de instalación",
+    mockups_note: "Algunas simulaciones para imaginar una pieza en tu casa, un hotel o una oficina.",
     eyebrow_commissions: "Comisiones",
     commissions_h2: "Piezas murales y colaboraciones",
     commissions_p: "Realizo piezas murales a medida para particulares, hoteles, despachos de arquitectura, diseñadores de interiores, curadores y marcas. Cada comisión parte de una conversación sobre el lugar, el espacio y la intención, antes de cualquier propuesta técnica.",
@@ -144,6 +155,7 @@ const I18N = {
     cta_commission: "Hablar de un proyecto",
     eyebrow_cv: "CV",
     cv_h2: "Trayectoria",
+    cv_summary: "Formada como ingeniera y como artesana textil, entre Colombia y Francia. El CV completo detalla formación, exposiciones y colaboraciones.",
     cv_download: "Descargar CV (PDF)",
     footer_h2: "Hablemos",
     footer_copy: "© Patricia Moreno. Tejido y escultura textil, París.",
@@ -348,7 +360,10 @@ const SERIES_ORDER = ["shibori", "multiple-nappe", "techniques-multiples", "coll
    solo suma una línea aquí con la ruta del archivo, y súbelo
    a assets/img/commissions/ con ese mismo nombre. */
 const COMMISSION_PHOTOS = [
-  "assets/img/commissions/commission-01.jpg",
+  "assets/img/commissions/commission-01.jpg"
+];
+
+const MOCKUP_PHOTOS = [
   "assets/img/commissions/commission-mockup-01.jpg",
   "assets/img/commissions/commission-mockup-02.jpg",
   "assets/img/commissions/commission-mockup-03.jpg",
