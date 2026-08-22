@@ -37,6 +37,16 @@ function applyI18n() {
   if (ctaLink) {
     ctaLink.href = "mailto:nomichiquitastudio@gmail.com?subject=" + encodeURIComponent(subjects[currentLang]);
   }
+
+  const waMessages = {
+    fr: "Bonjour Patricia, je souhaite discuter d'un projet de commission.",
+    en: "Hello Patricia, I'd like to discuss a commission project.",
+    es: "Hola Patricia, quiero hablar de un proyecto de comisión."
+  };
+  const waLink = document.getElementById("cta-whatsapp-link");
+  if (waLink) {
+    waLink.href = "https://wa.me/33778057182?text=" + encodeURIComponent(waMessages[currentLang]);
+  }
 }
 
 function renderMockupPhotos() {
