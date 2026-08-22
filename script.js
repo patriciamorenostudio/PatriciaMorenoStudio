@@ -27,6 +27,16 @@ function applyI18n() {
   renderSeries();
   renderCommissionPhotos();
   renderMockupPhotos();
+
+  const subjects = {
+    fr: "Projet de commission",
+    en: "Commission project",
+    es: "Proyecto de comisión"
+  };
+  const ctaLink = document.getElementById("cta-commission-link");
+  if (ctaLink) {
+    ctaLink.href = "mailto:nomichiquitastudio@gmail.com?subject=" + encodeURIComponent(subjects[currentLang]);
+  }
 }
 
 function renderMockupPhotos() {
