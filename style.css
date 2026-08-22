@@ -491,6 +491,20 @@ section.divider-top { border-top: 1px solid rgba(26,23,18,0.12); }
 
 .cta-button:hover { background: var(--coral-deep); }
 
+.cta-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cta-group .cta-button { margin-top: 20px; }
+
+.cta-whatsapp {
+  background: #25D366;
+}
+
+.cta-whatsapp:hover { background: #1ea952; }
+
 /* ---------- CV ---------- */
 .cv { padding: 72px 0; }
 .cv .cv-body { max-width: 70ch; }
