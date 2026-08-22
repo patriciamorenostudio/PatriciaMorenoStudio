@@ -26,6 +26,30 @@ function applyI18n() {
   renderProcessList();
   renderSeries();
   renderCommissionPhotos();
+  renderMockupPhotos();
+}
+
+function renderMockupPhotos() {
+  const dict = I18N[currentLang];
+  const box = document.getElementById("mockups-strip");
+  if (!box) return;
+  box.innerHTML = "";
+  MOCKUP_PHOTOS.forEach(function (src) {
+    const tile = document.createElement("div");
+    tile.className = "mockup-tile";
+    const img = document.createElement("img");
+    img.src = src;
+    img.alt = "Simulation d'installation, pièce de Patricia Moreno";
+    const ph = document.createElement("div");
+    ph.className = "ph-text";
+    ph.style.display = "none";
+    ph.textContent = dict.photo_soon;
+    img.onerror = function () { phFallback(img); };
+    tile.addEventListener("click", function () { openLightbox(src); });
+    tile.appendChild(img);
+    tile.appendChild(ph);
+    box.appendChild(tile);
+  });
 }
 
 function renderCommissionPhotos() {
@@ -43,6 +67,7 @@ function renderCommissionPhotos() {
     ph.style.display = "none";
     ph.textContent = dict.photo_soon;
     img.onerror = function () { phFallback(img); };
+    tile.addEventListener("click", function () { openLightbox(src); });
     tile.appendChild(img);
     tile.appendChild(ph);
     box.appendChild(tile);
@@ -70,12 +95,23 @@ function renderSeries() {
   const container = document.getElementById("series-container");
   container.innerHTML = "";
 
+  const nav = document.getElementById("series-nav");
+  if (nav) nav.innerHTML = "";
+
   SERIES_ORDER.forEach(function (seriesKey) {
     const pieces = PIECES.filter(function (p) { return p.series === seriesKey; });
     if (pieces.length === 0) return;
 
+    if (nav) {
+      const link = document.createElement("a");
+      link.href = "#series-" + seriesKey;
+      link.textContent = dict.series_names[seriesKey];
+      nav.appendChild(link);
+    }
+
     const block = document.createElement("div");
     block.className = "series-block";
+    block.id = "series-" + seriesKey;
 
     const h3 = document.createElement("h3");
     h3.textContent = dict.series_names[seriesKey];
@@ -165,6 +201,16 @@ function closeModal() {
   document.getElementById("modal-overlay").classList.remove("open");
 }
 
+function openLightbox(src) {
+  const img = document.getElementById("lightbox-img");
+  img.src = src;
+  document.getElementById("lightbox-overlay").classList.add("open");
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox-overlay").classList.remove("open");
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   applyI18n();
 
@@ -179,7 +225,11 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("modal-overlay").addEventListener("click", function (e) {
     if (e.target.id === "modal-overlay") closeModal();
   });
+  document.getElementById("lightbox-close").addEventListener("click", closeLightbox);
+  document.getElementById("lightbox-overlay").addEventListener("click", function (e) {
+    if (e.target.id === "lightbox-overlay") closeLightbox();
+  });
   document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") closeModal();
+    if (e.key === "Escape") { closeModal(); closeLightbox(); }
   });
 });
