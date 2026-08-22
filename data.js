@@ -348,5 +348,10 @@ const SERIES_ORDER = ["shibori", "multiple-nappe", "techniques-multiples", "coll
    solo suma una línea aquí con la ruta del archivo, y súbelo
    a assets/img/commissions/ con ese mismo nombre. */
 const COMMISSION_PHOTOS = [
-  "assets/img/commissions/commission-01.jpg"
+  "assets/img/commissions/commission-01.jpg",
+  "assets/img/commissions/commission-mockup-01.jpg",
+  "assets/img/commissions/commission-mockup-02.jpg",
+  "assets/img/commissions/commission-mockup-03.jpg",
+  "assets/img/commissions/commission-mockup-04.jpg",
+  "assets/img/commissions/commission-mockup-05.jpg"
 ];
