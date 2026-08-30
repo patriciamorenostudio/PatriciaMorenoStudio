@@ -213,16 +213,16 @@ const PIECES = [
     }
   },
   {
-    id: "mazorca-shibori",
+    id: "diversidad-mazorca",
     series: "shibori",
-    title: "Mazorca Shibori",
+    title: "Diversidad (mazorca)",
     dimensions: "1,2m × 50cm",
     materials: "Coton, polyester",
     images: ["assets/img/shibori/mazorca-shibori-01.jpg", "assets/img/shibori/mazorca-shibori-02.jpg", "assets/img/shibori/mazorca-shibori-03.jpg", "assets/img/shibori/mazorca-shibori-04.jpg"],
     story: {
-      fr: "Référence à la mazorca, l'épi de maïs. Volume tissé en shibori.",
-      en: "A reference to the mazorca, the corn cob. Volume woven in shibori.",
-      es: "Referencia a la mazorca. Volumen tejido en shibori."
+      fr: "La mazorca, l'épi de maïs, est une figure populaire dans toute l'Amérique latine. Comme le tissage, la nourriture transporte les gestes que les communautés se partagent.",
+      en: "The mazorca, the corn cob, is a popular figure across Latin America. Like weaving, food also carries the gestures that communities share.",
+      es: "La mazorca es una figura popular en toda Latinoamérica. Como el tejido, la comida también transporta los gestos que las comunidades comparten."
     }
   },
   {
